@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--b1-->
+      <button id="click_me-1">Click me 1!</button>
+<!--b2-->
+     <h2 id="heading"></h2>
+     <button id="display">Hiển thị </button>
+     <button id="displayOff">Tắt hiển thị</button>
+<!--b3-->
+     <button id="click_me-2">Click me 2!</button>
+<!--b4-->
+     <button id="click_me-3">Click me 3</button>
+<button type="button" onclick="showMessage();">Click Me!</button>
+</body>
+</html>
+<script>
+<!--    b1-->
+      var clickMe = document.getElementById("click_me-1");
+      clickMe.onclick = function (){
+          alert("click me!")
+          alert("ok")
+      }
+function showMessage(){
+    console.log('Xin chào!');
+// b2:
+     var display = document.getElementById("display");
+      display.onclick = function (){
+          document.getElementById("heading").innerHTML="hello";
+      }
+      var displayOff = document.getElementById("dispalyOff");
+      displayOff.onclick = function (){
+          document.getElementById("heading").innerHTML="";
+      }
+//      b3
+      var clickMe2 = document.getElementById("click_me-2");
+      clickMe2.onclick = function (){
+          document.write('xin chào');
+      }
+      var clickMe3 = document.getElementById("click_me-3");
+      clickMe3.onclick= function (){
+          console.log('xin chào')
+      }
+</script>
